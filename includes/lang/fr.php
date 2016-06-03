@@ -40,6 +40,7 @@ $lang=array(
     32=>'Croyance',
     33=>'Resultat',
     34=>'Methode',
+    35=>'page suivante',
       
     
 );

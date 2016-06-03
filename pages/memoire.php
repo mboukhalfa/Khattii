@@ -14,12 +14,12 @@ require_once('../'.$config['paths']['includes'] . '/header.php');
         </script>
 
         <canvas id="canvasPDF" style="border:1px solid black;"></canvas>
-        <button id="b">next page</button>
+        <span id="b" class="bigbutton bg1" ><span><?php echo $lang[35]; ?></span></span>
         
                 <script>
                     var numPage=1;
             var totalPage=null;
-            var oPDF=PDFJS.getDocument('./pages/PFE.pdf');
+            var oPDF=PDFJS.getDocument(config["pdf"] + 'memoire.pdf');
             
                     
             function renderPDF(pdf){

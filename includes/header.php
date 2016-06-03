@@ -46,6 +46,7 @@ require_once('/lang/' . $_SESSION["lang"] . '.php');
             config["uploads"]  = '<?php echo $config['paths']['uploads']; ?>';
             config["matlab"]  = '<?php echo $config['paths']['matlab']; ?>';
             config["pages"]  = '<?php echo $config['paths']['pages']; ?>';
+            config["pdf"]  = '<?php echo $config['paths']['pdf']; ?>';
          </script>
         <script src="<?php echo $config['urls']['baseUrl']; ?>lib/jquery/jquery-1.12.3.min.js"></script>
         <script src="<?php echo $config['urls']['baseUrl']; ?>lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
