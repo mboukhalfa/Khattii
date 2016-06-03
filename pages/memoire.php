@@ -1,10 +1,9 @@
+<?php
+require_once('../includes/config/config.php');
+require_once('../'.$config['paths']['includes'] . '/header.php');
 
+?>
 
-
-<!DOCTYPE HTML>
-
-<HTML >
-    <HEAD>
         
         
         <!-- source = http://rootslabs.net/blog/538-embarquer-pdf-page-web-pdf-js -->
@@ -13,11 +12,7 @@
         <script>
         PDFJS.workerSrc='./lib/pdfjs/build/pdf.worker.js';    
         </script>
-        
 
-        
-    </HEAD>
-    <body>
         <canvas id="canvasPDF" style="border:1px solid black;"></canvas>
         <button id="b">next page</button>
         
@@ -53,5 +48,6 @@
                 oPDF.then(renderPDF);
             });
         </script>
-    </body>
-</HTML>
+ <?php
+require_once('../'.$config['paths']['includes'] . '/footer.php');
+?>
