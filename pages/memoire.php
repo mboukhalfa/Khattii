@@ -16,8 +16,8 @@ require_once('../'.$config['paths']['includes'] . '/header.php');
 <div style="float:left">
     
   
-    <div style="width:auto;display: inline-block;border:0px solid #000;">
-        <canvas id="canvasPDF" class="" style="border:1px solid #ccc;  margin:0px;"></canvas>
+    <div  id="viewer" style="display: none;margin-top: 5%;">
+        <canvas id="canvasPDF" class="" style="border:1px solid #ddd;  margin:0px;"></canvas>
         
         <div class="text-center" >
             <span id="bp" class="btn "><span><?php echo $lang[36]; ?></span></span>
@@ -25,7 +25,7 @@ require_once('../'.$config['paths']['includes'] . '/header.php');
         </div>
     </div>
     
-    <aside class="pull-left" style="margin-left:0px;">
+    <aside class="pull-left" style="margin-left:0px; margin-top: 10%;">
             <ul class="nav">
                 <li class="nav-item">
                     <span onclick="chapitre(1)">PAGE DE GARDE</span>
@@ -47,53 +47,53 @@ require_once('../'.$config['paths']['includes'] . '/header.php');
                 </li>
                 
                 <li class="nav-item">
-                    <span onclick="chapitre(17)">1 INTRODUCTION À LA RCONNAISSANCE DU MANUSCRIT</span>
+                    <span onclick="chapitre(17)">INTRODUCTION À LA RCONNAISSANCE DU MANUSCRIT</span>
                     <ul>
-                        <li><span onclick="chapitre(17)">1.1 Introduction</span></li>
-                        <li><span onclick="chapitre(17)">1.2 Reconnaissance de l’écriture manuscrite</span></li>
-                        <li><span onclick="chapitre(17)">1.3 Le manuscrit arabe</span></li>
-                        <li><span onclick="chapitre(20)">1.4 Définitions</span></li>
-                        <li><span onclick="chapitre(22)">1.5 Traitement d'image</span></li>
-                        <li><span onclick="chapitre(22)">1.6 Conclusion</span></li>
+                        <li><span onclick="chapitre(17)">Introduction</span></li>
+                        <li><span onclick="chapitre(17)">Reconnaissance de l’écriture manuscrite</span></li>
+                        <li><span onclick="chapitre(17)">Le manuscrit arabe</span></li>
+                        <li><span onclick="chapitre(20)">Définitions</span></li>
+                        <li><span onclick="chapitre(22)">Traitement d'image</span></li>
+                        <li><span onclick="chapitre(22)">Conclusion</span></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <span onclick="chapitre(23)">2 L'EXTRACTION DE CARACTÉRISTIQUES</span>
+                    <span onclick="chapitre(23)">L'EXTRACTION DE CARACTÉRISTIQUES</span>
                     <ul>
-                        <li><span onclick="chapitre(23)">2.1 Introduction</span></li>
-                        <li><span onclick="chapitre(23)">2.2 Extraction de l'information par la méthode LM</span></li>
-                        <li><span onclick="chapitre(24)">2.3 Extraction des caractéristiques par la méthode FT</span></li>
-                        <li><span onclick="chapitre(30)">2.4 Conclusion</span></li>
+                        <li><span onclick="chapitre(23)">Introduction</span></li>
+                        <li><span onclick="chapitre(23)">Extraction de l'information par la méthode LM</span></li>
+                        <li><span onclick="chapitre(24)">Extraction des caractéristiques par la méthode FT</span></li>
+                        <li><span onclick="chapitre(30)">Conclusion</span></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <span onclick="chapitre(31)">3 LA COMBINAISON DE CLASSIFIEURS</span>
+                    <span onclick="chapitre(31)">LA COMBINAISON DE CLASSIFIEURS</span>
                     <ul>
-                        <li><span onclick="chapitre(31)">3.1 Introduction</span></li>
-                        <li><span onclick="chapitre(31)">3.2 Classification</span></li>
-                        <li><span onclick="chapitre(34)">3.3 Les méthodes de combinaison</span></li>
-                        <li><span onclick="chapitre(43)">3.4 Conclusion</span></li>
+                        <li><span onclick="chapitre(31)">Introduction</span></li>
+                        <li><span onclick="chapitre(31)">Classification</span></li>
+                        <li><span onclick="chapitre(34)">Les méthodes de combinaison</span></li>
+                        <li><span onclick="chapitre(43)">Conclusion</span></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <span onclick="chapitre(44)">4 LES CLASSIFIEURS UTILISÉS</span>
+                    <span onclick="chapitre(44)">LES CLASSIFIEURS UTILISÉS</span>
                     <ul>
-                        <li><span onclick="chapitre(44)">4.1 Introduction</span></li>
-                        <li><span onclick="chapitre(44)">4.2 Les réseaux de neurones</span></li>
-                        <li><span onclick="chapitre(45)">4.3 Architectures</span></li>
-                        <li><span onclick="chapitre(49)">4.4 Les Algorithmes d'apprentissage</span></li>
-                        <li><span onclick="chapitre(50)">4.5 Les machines à vecteurs de support SVM</span></li>
-                        <li><span onclick="chapitre(53)">4.6 LIBSVM</span></li>
-                        <li><span onclick="chapitre(56)">4.7 Conclusion</span></li>
+                        <li><span onclick="chapitre(44)">Introduction</span></li>
+                        <li><span onclick="chapitre(44)">Les réseaux de neurones</span></li>
+                        <li><span onclick="chapitre(45)">Architectures</span></li>
+                        <li><span onclick="chapitre(49)">Les Algorithmes d'apprentissage</span></li>
+                        <li><span onclick="chapitre(50)">Les machines à vecteurs de support SVM</span></li>
+                        <li><span onclick="chapitre(53)">LIBSVM</span></li>
+                        <li><span onclick="chapitre(56)">Conclusion</span></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <span onclick="chapitre(57)">5 IMPLÉMENTATION, TESTS ET RÉSULTATS</span>
+                    <span onclick="chapitre(57)">IMPLÉMENTATION, TESTS ET RÉSULTATS</span>
                     <ul>
-                        <li><span onclick="chapitre(57)">5.1 Introduction</span></li>
-                        <li><span onclick="chapitre(57)">5.2 Environement de travail</span></li>
-                        <li><span onclick="chapitre(59)">5.3 Implémentation</span></li>
-                        <li><span onclick="chapitre(72)">5.4 Conclusion</span></li>
+                        <li><span onclick="chapitre(57)">Introduction</span></li>
+                        <li><span onclick="chapitre(57)">Environement de travail</span></li>
+                        <li><span onclick="chapitre(59)">Implémentation</span></li>
+                        <li><span onclick="chapitre(72)">Conclusion</span></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -131,16 +131,17 @@ require_once('../'.$config['paths']['includes'] . '/header.php');
                     b.style.display="none";
                 }
                 if(numPage <= totalPage){
-                    b.style.display='bolck'
                     pdf.getPage(numPage).then(renderPage);
                     $('html, body').animate({ scrollTop: 0 }, 'slow');
                     
                 }
+                viewer.style.display="inline-block";
             }
             function renderPage(page){    
                 var scale = 1.5;     
                 var viewport = page.getViewport(scale);  
                 var canvas = document.getElementById('canvasPDF');   
+                var viewer = document.getElementById('viewer');   
                 var context = canvas.getContext('2d');    
                 canvas.height = viewport.height;    
                 canvas.width = viewport.width;      
@@ -152,6 +153,7 @@ require_once('../'.$config['paths']['includes'] . '/header.php');
                     ////////////// firt page //////////////
                      oPDF.then(renderPDF);
                     
+                     
             b=document.getElementById('bn');
             bp=document.getElementById('bp');
                     
