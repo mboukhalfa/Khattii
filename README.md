@@ -1,4 +1,4 @@
-# pfe
-projet fin d'etudes
+# Khattii
+Khattii is a web application that has been developed in the context of bachelor final project, it is dedicated to the recognition of the Arabic handwriting, it is available both in the Arabic and French languages.  It has been designed using the two main programming languages: Matlab and PHP for background processing: Matlab scripts enabled the image processing whereas PHP codes served to run Matlab scripts, upload the images and get results from Matlab scripts. 
 
-la combinaison des classifieurs pour une meilleures reconnaissance du maniscrit arabes 
+The graphical interface of the application was realized using HTML5, CSS, JavaScript and also the JQuery and BootStrap frameworks. The exchange of data between the different programming languages was done using the Extensible Markup Language (XML) data structures. Khattii web application has been designed to be responsive, this means that web pages can be viewed in response to the size of the screen, in other words, we can have access to the application using any web browser and any device.
